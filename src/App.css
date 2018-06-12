@@ -1,0 +1,35 @@
+h1, h2, p {
+  color: white !important;
+}
+
+html {
+  background-color: rgb(36, 36, 41);
+}
+
+/* CARD IMAGE */
+
+
+.card-img {
+  height: 300px;
+  opacity: 0.6;
+  transition: transform .25s ease;
+}
+
+.card-img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
+
+.card-img-reverse {
+  height: 300px;
+  opacity: 0.6;
+  transform: rotate(180deg);
+  transition: transform .25s ease;
+}
+
+.card-img-reverse:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
