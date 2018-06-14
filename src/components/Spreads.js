@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import CardGrid from './CardGrid';
-import axios from 'axios';
+import React, { Component } from 'react'
+import CardGrid from './CardGrid'
+import axios from 'axios'
 
-const getCardsUrl = 'https://tarot.howlcode.com/cards';
-const getShuffledCardsUrl = 'https://tarot.howlcode.com/spreads/shuffled';
-const getRandomCardUrl = 'https://tarot.howlcode.com/spreads/random_card';
-const getThreeCardsUrl = 'https://tarot.howlcode.com/spreads/three_cards';
-const getCelticCrossUrl = 'https://tarot.howlcode.com/spreads/celtic_cross';
+const getCardsUrl = 'https://tarot.howlcode.com/cards'
+const getShuffledCardsUrl = 'https://tarot.howlcode.com/spreads/shuffled'
+const getRandomCardUrl = 'https://tarot.howlcode.com/spreads/random_card'
+const getThreeCardsUrl = 'https://tarot.howlcode.com/spreads/three_cards'
+const getCelticCrossUrl = 'https://tarot.howlcode.com/spreads/celtic_cross'
 
 class Spreads extends Component {
   state = {
@@ -21,8 +21,8 @@ class Spreads extends Component {
       'celticCross': getCelticCrossUrl,
       'shuffled': getShuffledCardsUrl,
       'all': getCardsUrl
-    };
-    this.setState({ cardsUrl: spreadStyle[e.target.value] });
+    }
+    this.setState({ cardsUrl: spreadStyle[e.target.value] })
   }
 
   getCards = () => {
@@ -53,4 +53,4 @@ class Spreads extends Component {
   }
 }
 
-export default Spreads;
+export default Spreads

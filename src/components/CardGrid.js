@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import CardModal from './CardModal';
+import React, { Component } from 'react'
+import CardModal from './CardModal'
 
 class CardGrid extends Component {
 
@@ -9,24 +9,24 @@ class CardGrid extends Component {
   }
 
   randAlign = () => {
-    let imgAlign = ['card-img-reverse', 'card-img'];
-    return imgAlign[Math.floor(Math.random()*imgAlign.length)];
+    let imgAlign = ['card-img-reverse', 'card-img']
+    return imgAlign[Math.floor(Math.random()*imgAlign.length)]
   }
 
   cardModal = (card) => {
-    this.setState({ card: card, isOpen: true }); 
+    this.setState({ card: card, isOpen: true })
   }
 
   toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
-    });
+    })
   }
 
   render() {
-    let cardGridContent;
+    let cardGridContent
     
-    const { cards } = this.props;
+    const { cards } = this.props
 
     if(cards) {
       cardGridContent = (
@@ -43,7 +43,7 @@ class CardGrid extends Component {
       </div>
       )
     } else {
-      cardGridContent = null;
+      cardGridContent = null
     }
 
     return (
@@ -54,4 +54,4 @@ class CardGrid extends Component {
   }
 }
 
-export default CardGrid;
+export default CardGrid

@@ -3,7 +3,7 @@ import React from 'react'
 const CardModal = (props) => {
 
   if(!props.show) {
-    return null;
+    return null
   }
 
   return(

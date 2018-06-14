@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import NavBar from './components/NavBar';
-import Spreads from './components/Spreads';
-import './App.css';
+import React, { Component } from 'react'
+import NavBar from './components/NavBar'
+import Spreads from './components/Spreads'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -14,4 +14,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
