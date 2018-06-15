@@ -30,7 +30,8 @@ class CardGrid extends Component {
 
     if(cards) {
       cardGridContent = (
-        <div className="container has-text-centered">
+        <div className="container has-text-centered card-container">
+        <br />
           <div className="columns is-multiline is-centered">
             { cards.map(card => (
               <div className="column is-one-quarter" key={card.id} onClick={() => this.cardModal(card)}>

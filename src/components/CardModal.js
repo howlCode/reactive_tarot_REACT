@@ -10,7 +10,7 @@ const CardModal = (props) => {
     <div className="modal is-active">
       <div className="modal-background"></div>
         <div className="modal-content">
-          <h1 className="title">{props.card.name}</h1>
+          <div><h1 className="title">{props.card.name}</h1><span><img src={props.card.face_image_url} alt={props.card.name} /></span></div>
           <hr />
           <p className="has-text-justified"><span className="is-italic">Summary: </span>{props.card.short_meaning}</p>
           <hr />

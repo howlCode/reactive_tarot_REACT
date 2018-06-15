@@ -33,22 +33,25 @@ class Spreads extends Component {
 
   render() {
     return (
-      <div className="container has-text-centered">
-        <div className="select">
-          <select name="cardsUrl" onChange={this.handleChange}>
-          <option value="" selected disabled hidden>Choose Your Spread</option>
-            <option value={"random"}>Draw a Random Card</option>
-            <option value={"three"}>Draw Three Cards</option>
-            <option value={"celticCross"}>Draw a Celtic Cross Spread</option>
-            <option value={"shuffled"}>Draw a Shuffled Deck</option>
-            <option value={"all"}>Draw All Cards</option>
-          </select>
-        </div>
-        <button className="button is-primary" onClick={this.getCards}>Show Cards</button>
+      <React.Fragment>
+        <div className="container-fluid has-text-centered selection-box">
         <br />
-        <hr className="hr" />
-        { this.state.cards.length > 0 ? (<CardGrid cards={this.state.cards} />) : null }       
-      </div>
+          <div className="select">
+            <select name="cardsUrl" onChange={this.handleChange}>
+            <option value="" selected disabled hidden>Choose Your Spread</option>
+              <option value={"random"}>Draw a Random Card</option>
+              <option value={"three"}>Draw Three Cards</option>
+              <option value={"celticCross"}>Draw a Celtic Cross Spread</option>
+              <option value={"shuffled"}>Draw a Shuffled Deck</option>
+              <option value={"all"}>Draw All Cards</option>
+            </select>
+          </div>
+          <button className="button show-cards-button" onClick={this.getCards}>Show Cards</button>
+          <br />
+          <br />             
+        </div>
+        { this.state.cards.length > 0 ? (<CardGrid cards={this.state.cards} />) : null }
+      </React.Fragment>
     )
   }
 }

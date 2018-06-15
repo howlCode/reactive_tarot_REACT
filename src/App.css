@@ -1,9 +1,53 @@
+/* COlORS */
+
+/* background: #C5CAE9; */
+/* dark-primary: #303F9F */
+/* primary: #3F51B5 */
+/* text: #FFFFFF */
+/* accent: #8BC34A */
+/* primary-text: #212121 */
+/* dividers: #BDBDBD */
+
+* {
+  font-family: 'Merriweather', serif;
+}
+
+/* Remove overflow scrollbar on modal */
+::-webkit-scrollbar {
+  width: 0.5px;
+  background: transparent;
+}
+
 h1, h2, p {
-  color: white !important;
+  color: #FFFFFF !important;
 }
 
 html {
-  background-color: rgb(36, 36, 41);
+  background-color: #212121;
+}
+
+hr {
+  background-color: #BDBDBD;
+}
+
+.nav {
+  background-color: #303F9F;
+}
+
+.banner {
+  font-size: 2.5rem;
+}
+
+.selection-box {
+  background-color: #3F51B5;
+}
+
+.show-cards-button {
+ background-color: #8BC34A; 
+}
+
+.card-container {
+  background-color: #212121;
 }
 
 /* CARD IMAGE */
@@ -32,4 +76,16 @@ html {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.05, 1.05);
+}
+
+/* MODAL */
+
+.modal-background {
+  background-color: rgba(33, 33, 33, 0.9);
+}
+
+.modal-content {
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  width: 75%;
 }
