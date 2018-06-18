@@ -11,7 +11,8 @@ const getCelticCrossUrl = 'https://tarot.howlcode.com/spreads/celtic_cross'
 class Spreads extends Component {
   state = {
     cards: [],
-    cardsUrl: ''
+    cardsUrl: '',
+    spread: ''
   }
 
   handleChange = (e) => {
@@ -23,6 +24,7 @@ class Spreads extends Component {
       'all': getCardsUrl
     }
     this.setState({ cardsUrl: spreadStyle[e.target.value] })
+    this.setState({ spread: e.target.value })
   }
 
   getCards = () => {
@@ -50,7 +52,7 @@ class Spreads extends Component {
           <br />
           <br />             
         </div>
-        { this.state.cards.length > 0 ? (<CardGrid cards={this.state.cards} />) : null }
+        { this.state.cards.length > 0 ? (<CardGrid cards={this.state.cards} spread={this.state.spread} />) : null }
       </React.Fragment>
     )
   }

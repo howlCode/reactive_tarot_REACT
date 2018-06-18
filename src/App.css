@@ -12,7 +12,7 @@
   font-family: 'Merriweather', serif;
 }
 
-/* Remove overflow scrollbar on modal */
+/* Remove overflow scrollbar on modal in chrome */
 ::-webkit-scrollbar {
   width: 0.5px;
   background: transparent;

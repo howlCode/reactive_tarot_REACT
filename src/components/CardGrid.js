@@ -23,6 +23,7 @@ class CardGrid extends Component {
     })
   }
 
+
   render() {
     let cardGridContent
     
@@ -40,13 +41,12 @@ class CardGrid extends Component {
               </div>
             )) }
           </div>
-        { this.state.card.length !== 0 ? (<CardModal card={this.state.card} onClose={this.toggleModal} show={this.state.isOpen} />) : null }
+          { this.state.card.length !== 0 ? (<CardModal card={this.state.card} onClose={this.toggleModal} show={this.state.isOpen} />) : null }
       </div>
       )
     } else {
       cardGridContent = null
-    }
-
+  }
     return (
       <div>
         {cardGridContent}
