@@ -32,7 +32,31 @@ class CardGrid extends Component {
 
     switch (spread) {
       case 'three':
-        positions = ['The Past', 'The Present', 'The Future']
+        if(cards.length === 3) {
+          positions = ['The Past', 'The Present', 'The Future']
+          cards[0].position = positions[0]
+          cards[1].position = positions[1]
+          cards[2].position = positions[2]
+          break;
+        }
+      case 'celticCross':
+        if(cards.length === 10) {
+          positions = ['Represents You', 'Your Obstacle', 'Influences', 'The Root of The Query', 'The Past', 'Near Future',
+                       'Best Approach to Query', 'The Environment Around the Query', 'Your Hopes and Fears', 'Ultimate Potential Outcome']
+          cards[0].position = positions[0]
+          cards[1].position = positions[1]
+          cards[2].position = positions[2]
+          cards[3].position = positions[3]
+          cards[4].position = positions[4]
+          cards[5].position = positions[5]
+          cards[6].position = positions[6]
+          cards[7].position = positions[7]
+          cards[8].position = positions[8]
+          cards[9].position = positions[9]
+          break;
+        }
+      default:
+        positions = []
         break;
     }
 
@@ -44,13 +68,14 @@ class CardGrid extends Component {
             { cards.map(card => (               
                 <div className="column is-one-quarter" key={card.id} onClick={() => this.cardModal(card)}>
                   <div className="card">
+                    <p className="is-bold has-text-centered position">{card.position}</p>
                     <div className="card-image">
                       <figure className="image is-300x300">
-                        <img src={card.face_image_url} alt={card.name} className={this.randAlign()} />
+                        <img src={card.face_image_url} alt={card.name} className='card-img' />
                       </figure>
                     </div>
                     <div className="card-content">
-                      <p className="is-italic has-text-centered">position</p>  
+                      <p className="is-italic has-text-centered">{card.up}</p>
                     </div>
                   </div>
                 </div>

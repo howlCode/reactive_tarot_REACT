@@ -12,11 +12,6 @@
   font-family: 'Merriweather', serif;
 }
 
-/* Remove overflow scrollbar on modal in chrome */
-::-webkit-scrollbar {
-  width: 0.5px;
-  background: transparent;
-}
 
 h1, h2 {
   color: #FFFFFF !important;
@@ -50,7 +45,12 @@ hr {
   background-color: #212121;
 }
 
-.card {
+.card-content {
+  background-color: #3F51B5;
+  color: #fff;
+}
+
+.position {
   background-color: #8BC34A;
   color: #002;
 }
@@ -94,4 +94,10 @@ hr {
   line-height: 1.7rem;
   width: 75%;
   color: #fff !important;
+}
+
+/* Remove overflow scrollbar on modal in chrome */
+.modal-content::-webkit-scrollbar {
+  width: 0.5px;
+  background: transparent;
 }

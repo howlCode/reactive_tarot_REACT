@@ -38,6 +38,9 @@ class Spreads extends Component {
       <React.Fragment>
         <div className="container-fluid has-text-centered selection-box">
         <br />
+          <h2>Choose a three card spread for quick insight into your life...</h2>
+          <h2>Or choose the Celtic Cross spread for a more in-depth look at your query...</h2>
+          <br />
           <div className="select">
             <select name="cardsUrl" onChange={this.handleChange}>
             <option value="" selected disabled hidden>Choose Your Spread</option>

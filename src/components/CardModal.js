@@ -16,8 +16,8 @@ const CardModal = (props) => {
           <hr />
           <p className="has-text-justified"><span className="is-italic">Meaning: </span>{props.card.full_meaning}</p>
           <hr />
-          <p className="has-text-left"><span className="is-italic">Upright: </span>{props.card.up}</p>
-          <p className="has-text-left"><span className="is-italic">Reversed: </span>{props.card.reverse}</p>
+          <p className="has-text-left"><span className="is-italic">Keywords: </span>{props.card.up}</p>
+          {/*<p className="has-text-left"><span className="is-italic">Reversed: </span>{props.card.reverse}</p>*/}
         </div>
       <button className="modal-close is-large" aria-label="close" onClick={props.onClose}></button>
     </div>
