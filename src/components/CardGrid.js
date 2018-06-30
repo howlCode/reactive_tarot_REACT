@@ -23,6 +23,10 @@ class CardGrid extends Component {
     })
   }
 
+  componentWillMount = () => {
+    return (<a class="button is-loading">Loading</a>)
+  }
+
 
   render() {
     let cardGridContent
@@ -37,8 +41,8 @@ class CardGrid extends Component {
           cards[0].position = positions[0]
           cards[1].position = positions[1]
           cards[2].position = positions[2]
-          break;
         }
+        break;
       case 'celticCross':
         if(cards.length === 10) {
           positions = ['Represents You', 'Your Obstacle', 'Influences', 'The Root of The Query', 'The Past', 'Near Future',
@@ -53,8 +57,8 @@ class CardGrid extends Component {
           cards[7].position = positions[7]
           cards[8].position = positions[8]
           cards[9].position = positions[9]
-          break;
         }
+        break;
       default:
         positions = []
         break;
@@ -65,7 +69,7 @@ class CardGrid extends Component {
         <div className="container has-text-centered card-container">
         <br />
           <div className="columns is-multiline is-centered">
-            { cards.map(card => (               
+            { cards.map(card => (
                 <div className="column is-one-quarter" key={card.id} onClick={() => this.cardModal(card)}>
                   <div className="card">
                     <p className="is-bold has-text-centered position">{card.position}</p>

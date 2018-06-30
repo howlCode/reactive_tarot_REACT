@@ -8,8 +8,12 @@
 /* primary-text: #212121 */
 /* dividers: #BDBDBD */
 
+/* card bottoms: #9DCCD4 */
+/* card tops: #9DAA85 */
+
 * {
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'IM Fell English SC', serif;
 }
 
 
@@ -30,7 +34,8 @@ hr {
 }
 
 .banner {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+  height: 20px;
 }
 
 .selection-box {
@@ -38,7 +43,9 @@ hr {
 }
 
 .show-cards-button {
- background-color: #8BC34A; 
+ /*background-color: #8BC34A;*/
+ background-color: #526639;
+ color: #fff;
 }
 
 .card-container {
@@ -46,13 +53,17 @@ hr {
 }
 
 .card-content {
-  background-color: #3F51B5;
-  color: #fff;
+  /*background-color: #3F51B5;*/
+  background-color: #859AA3;
+  color: #000;
+  font-size: 1.1rem;
 }
 
 .position {
-  background-color: #8BC34A;
-  color: #002;
+  /*background-color: #8BC34A;*/
+  background-color: #526639;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 /* CARD IMAGE */
@@ -86,7 +97,7 @@ hr {
 /* MODAL */
 
 .modal-background {
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, 0.95);
 }
 
 .modal-content {
@@ -94,6 +105,7 @@ hr {
   line-height: 1.7rem;
   width: 75%;
   color: #fff !important;
+  font-size: 1.1rem;
 }
 
 /* Remove overflow scrollbar on modal in chrome */
